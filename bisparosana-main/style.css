@@ -1,0 +1,394 @@
+/* Estilos gerais */
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Importando a fonte personalizada (caso você tenha uma) */
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('minha-fonte.woff2') format('woff2'),
+       url('minha-fonte.woff') format('woff');
+}
+
+/* Aplicando as fontes */
+/* Aplicando as fontes */
+/* Estilos para o container de vídeos do YouTube */
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5c395;
+}
+
+/* Estilos para os títulos dos vídeos */
+#videos h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+/* Estilos para os iframes dos vídeos */
+#videos iframe {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover nos vídeos */
+#videos iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para vídeos */
+@media (max-width: 768px) {
+    #videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #videos iframe {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 10px; /* Aumente o padding para melhor espaçamento */
+    background-color: #f5c395; /* Marrom mais escuro para melhor contraste */
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    position: relative; /* Permite posicionar elementos absolutamente dentro do cabeçalho */
+}
+
+
+.miniatura {
+    width: 90px;
+    height: auto;
+}
+
+.miniatura {
+    position: absolute;
+    top: 10px; /* Ajuste o valor conforme necessário */
+    left: 10px; 
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+header nav button {
+    background-color: #d17a28; /* Cor de fundo verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px; 
+    text-decoration-color: #f5c395;
+   /* Cantos    
+ arredondados */
+}
+/* ... outros estilos ... */
+
+/* Seção de Chamada */
+.chamada {
+    text-align: center; 
+    padding: 210px; /* Reduz o padding superior para 80px */
+    background-color: #f5c395; 
+    color: #1b1b1a;
+    margin-bottom: 10px; 
+    background-image: url(/CAPA\ 3\ \(2\).jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.8;
+}
+
+
+.chamada h2 {
+    margin-top: -20px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 10px;
+    color: #bb620e; 
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.chamada p {
+    font-style: italic; 
+text-align: center;  
+    font-size: 20px;
+    color: #bb620e; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra preta suave */
+}
+.chamada h3 {
+    margin-bottom: 10px;
+    color: #fdfbfb; 
+    font-size: 50px;
+}
+/* Seção Sobre a Bispa */
+.sobre {
+    padding: 40px; /* Reduza o padding para melhor visualização em telas menores */
+    margin-bottom: 20px;
+    background-color: #f5c395;
+    background-image: url(/bispa\ foto\ cortada.png);
+    color: #333;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajusta a imagem para caber no container */
+    background-position: center left; /* Posiciona a imagem no canto superior direito */
+    display: flex; /* Usa flexbox para posicionar o texto */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: flex-end; /* Alinha o texto ao final do container */
+}
+
+.sobre p, .sobre h2 {
+    font-style: normal;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 500px; /* Remove a margem esquerda */
+    width: 50%; /* Limita a largura do texto para melhor legibilidade */
+}
+.familia {
+    padding: 40px; /* Reduza o padding para melhor visualização em telas menores */
+    margin-bottom: 20px;
+    background-color: #f5c395;
+    color: #333;
+    background-image: url(/bispa.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajusta a imagem para caber no container */
+    background-position: left ;/* Posiciona a imagem no canto superior direito */
+    display: flex; /* Usa flexbox   para posicionar o texto */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: flex-end; /* Alinha o texto ao final do container */
+
+   
+}
+.familia image {
+    margin-left: 100px;
+    
+}
+.familia p {
+    font-style: normal;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 500px; /* Remove a margem esquerda */
+    width: 50%; /* Limita a largura do texto para melhor legibilidade */
+}
+.familia h3 {
+    font-style: normal;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 500px; /* Remove a margem esquerda */
+    width: 50%; /* Limita a largura do texto para melhor legibilidade */
+}
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 200px;
+    border-radius: 50%; /* Imagem circular */
+    margin-bottom: 20px;
+}
+
+/* Seções */
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f5c395;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #0a0a0a;
+}
+
+section h1 {
+    margin-top: 1px;
+    color: #814b05;
+  
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+section h2{
+    margin-bottom: 15px;
+    color: #4b4a4a;
+    margin-left: 50px;
+}
+section h3,h4,h5 {
+    margin-bottom: 15px;
+    color: #4b4a4a; /* Cor de destaque para títulos */
+    margin-left: 30px;
+    text-align: left;
+}
+section p{
+    margin-bottom: 15px;
+    color: #4b4a4a; /* Cor de destaque para títulos */
+    margin-left: 10px;
+    text-align: left;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* canal do youtube*/
+
+.youtube{
+    text-align: center;
+    background-color: #f5c395;
+    color: #333;
+}
+.youtube p{
+    text-align: center;
+}
+
+.spotify {
+    text-align: center;
+    background-color: #f5c395;
+    color: #333;
+    margin-top: 0px;
+    
+}
+/* Testemunhos */
+
+.titulo-testemunhos {
+    text-align: center; /* Centraliza o título */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-bottom: 5px; /* Adiciona espaço abaixo do título */
+    color: #333; /* Define a cor do texto (opcional) */
+    background-color: #f5c395;
+    margin-top: 0%;
+}
+.testemunhos {
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap; 
+    justify-content:center; 
+    color: #111111;
+    background-color: #f5c395;
+    color: #333;
+   
+}
+
+.testemunhos .testemunho {
+    
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 20%; 
+    box-sizing: border-box; 
+    background-color: #f5c395;
+}
+
+.testemunhos .testemunho img {
+    max-width: 50%;
+    height:min-content;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço, mesmo que seja cortada */
+    aspect-ratio: 1 / 1; /* Define a proporção da imagem como 1:1 (quadrado) */
+}
+
+.testemunhos .testemunho h2 {
+    font-style: italic; 
+    text-align: center; 
+    
+    
+}
+
+/* Formulário de Testemunho */
+.enviar-testemunho{
+    color: #333;
+}
+.enviar-testemunho textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+  
+    
+}
+
+.enviar-testemunho button {
+    background-color: #d17a28;
+    color: #f1efef;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #351f02; /* Fundo escuro */
+    color: #fff;
+}
+
+footer nav a {
+    color: #fdfafa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a {
+/* Estilos para os links dos ícones */
+margin: 0 10px;
+font-size: 1.5em; /* Ajuste o tamanho conforme necessário */
+color: #fff; /* Cor dos ícones */
+/* Responsividade */
+text-align: right;
+} 
+header {
+    flex: 1; 
+}
+/* Media queries para responsividade */
+@media (max-width: 768px) { /* Telas menores, como tablets */
+  .cabeçalho button, 
+  .icones-redes-sociais a i {
+    font-size: 14px; 
+  }
+
+  .icones-redes-sociais a {
+    margin: 0 3px; 
+  }
+}
+
+@media (max-width: 480px) { /* Telas muito pequenas, como celulares */
+  .cabeçalho button,
+  .icones-redes-sociais a i {
+    font-size: 12px; 
+  }
+
+  .icones-redes-sociais {
+    flex-direction: column; 
+    align-items: flex-end; 
+  }
+
+  .icones-redes-sociais a {
+    margin: 3px 0; 
+  }
+
+  .miniatura { 
+    display: none; 
+  }
+
+  .thumbnail-medium {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Escala a imagem para preencher o container */
+  }
+}
